@@ -167,7 +167,14 @@ Below you can see an example of a process which requires a path the BBmap tools.
         cpus = 8
     }
 ```
-
+#### metaspades pathway 
+For the metaspades assembler I made a variable that requries a complete path to the "metaspades.py" program in "conf/amanj.variantSeeker.config" as exemplified below.
+```
+    withName: asm_metaviralspades{
+       beforeScript='export assembler=/FullPathToFile/metaviralspades/spades/bin/metaspades.py'
+       cpus=10
+    }
+```
 ## Running pipeline
 The user should create a folder one called 'input_reads' and store all samples there. Each sample should have a folder labeled with sample name / samle ID. Each sample folder should contain paired-end fastq compressed gzip (GNU Zip) files and a file with unpaired reads in fastq gzip format. Each fastq file need to be labled with same sample names but different file extension names "_1.fq.gz", "_2.fq.gz" and "_unpaired.fq.gz" for the pipeline to recognize the sample.
 
