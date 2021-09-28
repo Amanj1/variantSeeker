@@ -7,8 +7,7 @@ A pipeline that is designed to find variants / types based on two phases using r
 
 The UML (Unified Modeling Language) diagram above displays the steps in the pipeline. "Input data" is the input reads and the data should be trimmed, quality checked and human DNA/reads should be filtered out before running the pipeline. Here we can see a summary of all the steps.
 
-Below we can see an example of a table in the last process and what we were interested in were TTV (torque teno virus) viruses. Please note that "alignment_len" is based on aminoacid length and "seq_len" is based on the nucleotide sequence length.
-
+Below we can see an example of a table in the last process and what we were interested in were TTV (torque teno virus) viruses.
 ![alt text](/IMG/tables/variantSeeker_html_table.png)
 
 ## Software requirements 
