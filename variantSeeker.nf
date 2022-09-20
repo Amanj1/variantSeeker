@@ -251,9 +251,9 @@ process asm_per_ctg_coverage{
 
   script:
   """
-  pileup.sh in=${spades_mapping} out=${sample_id}_metaspades_reads_to_contigs.cov.txt
+  pileup.sh in=${spades_mapping} out=${sample_id}_metaspades_reads_to_contigs.cov.txt 32bit=t
   sleep 5s
-  pileup.sh in=${megahit_mapping} out=${sample_id}_megahit_reads_to_contigs.cov.txt
+  pileup.sh in=${megahit_mapping} out=${sample_id}_megahit_reads_to_contigs.cov.txt 32bit=t
   """
 }
 
